@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmGuia.Android", "MvvmGui
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmGuia.iOS", "MvvmGuia.iOS\MvvmGuia.iOS.csproj", "{38427420-4734-4E41-B3E7-73B800119E33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmGuia", "MvvmGuia\MvvmGuia.csproj", "{CE87205D-3191-4B7A-A0E0-E1D36F1DB465}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvvmGuia", "MvvmGuia\MvvmGuia.csproj", "{CE87205D-3191-4B7A-A0E0-E1D36F1DB465}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
