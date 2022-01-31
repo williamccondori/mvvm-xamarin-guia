@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
@@ -56,21 +54,21 @@ namespace MvvmGuia.VistaModelo
         private ImageSource _image;
         public ImageSource Image
         {
-            get { return _image; }
+            get => _image;
             set => SetProperty(ref _image, value);
         }
 
         private string _title;
         public string Title
         {
-            get { return _title; }
+            get => _title;
             set => SetProperty(ref _title, value);
         }
 
         private bool _isBusy;
         public bool IsBussy
         {
-            get { return _isBusy; }
+            get => _isBusy;
             set => SetProperty(ref _isBusy, value);
         }
     }

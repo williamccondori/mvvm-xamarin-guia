@@ -1,6 +1,5 @@
-﻿using System;
+﻿using MvvmGuia.Vistas;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace MvvmGuia
 {
@@ -10,7 +9,7 @@ namespace MvvmGuia
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Pagina1();
         }
 
         protected override void OnStart()

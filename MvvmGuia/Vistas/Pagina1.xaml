@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MvvmGuia.Vistas.Pagina1">
+    <Grid BackgroundColor="#464FBC">
+        <StackLayout VerticalOptions="Center">
+            <StackLayout 
+                Orientation="Horizontal"
+                HorizontalOptions="Center">
+                <Label 
+                    Text="Mensaje:"
+                    TextColor="White" 
+                    FontAttributes="Bold" 
+                    VerticalOptions="Center"
+                    ></Label>
+                <Entry 
+                    PlaceholderColor="White"
+                    Placeholder="Escriba su mensaje" 
+                    HorizontalOptions="StartAndExpand" 
+                    TextColor="White"
+                    Text="{Binding Mensaje}"
+                    ></Entry>
+            </StackLayout>
+            <Button
+                Text="Ejecutar" 
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Command="{Binding AlertaAsyncCommand}" 
+                TextTransform="None"></Button>
+        </StackLayout>
+    </Grid>
+</ContentPage>
