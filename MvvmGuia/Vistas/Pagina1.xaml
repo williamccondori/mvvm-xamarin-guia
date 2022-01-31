@@ -8,25 +8,55 @@
                 Orientation="Horizontal"
                 HorizontalOptions="Center">
                 <Label 
-                    Text="Mensaje:"
+                    Text="Número 1:"
                     TextColor="White" 
                     FontAttributes="Bold" 
                     VerticalOptions="Center"
                     ></Label>
                 <Entry 
                     PlaceholderColor="White"
-                    Placeholder="Escriba su mensaje" 
+                    Placeholder="Escriba un número" 
                     HorizontalOptions="StartAndExpand" 
                     TextColor="White"
-                    Text="{Binding Mensaje}"
+                    Keyboard="Numeric"
+                    Text="{Binding N1}"
+                    ></Entry>
+            </StackLayout>
+            <StackLayout 
+                Orientation="Horizontal"
+                HorizontalOptions="Center">
+                <Label 
+                    Text="Número 2:"
+                    TextColor="White" 
+                    FontAttributes="Bold" 
+                    VerticalOptions="Center"
+                    ></Label>
+                <Entry 
+                    PlaceholderColor="White"
+                    Placeholder="Escriba un número" 
+                    HorizontalOptions="StartAndExpand" 
+                    TextColor="White"
+                    Keyboard="Numeric"
+                    Text="{Binding N2}"
                     ></Entry>
             </StackLayout>
             <Button
-                Text="Ejecutar" 
+                Text="Sumar" 
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
-                Command="{Binding AlertaAsyncCommand}" 
-                TextTransform="None"></Button>
+                Command="{Binding SumarCommand}" 
+                TextTransform="None"
+                BackgroundColor="White"
+                FontAttributes="Bold"
+                CornerRadius="5"
+                ></Button>
+            <Label
+                Text="{Binding Respuesta}"
+                TextColor="White"
+                HorizontalOptions="Center"
+                FontAttributes="40"
+                FontSize="40"
+                ></Label>
         </StackLayout>
     </Grid>
 </ContentPage>
