@@ -4,7 +4,7 @@
              x:Class="MvvmGuia.MainPage">
 
     <Grid>
-        <Button x:Name="BtnGuardar" Text="Guardar" Clicked="BtnGuardar_Clicked"></Button>
+        <Button x:Name="BtnGuardar" Text="Guardar" Clicked="BtnGuardar_Clicked" VerticalOptions="Center" HorizontalOptions="Center"></Button>
     </Grid>
 
 </ContentPage>
