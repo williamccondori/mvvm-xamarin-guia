@@ -14,5 +14,10 @@ namespace MvvmGuia
         {
             InitializeComponent();
         }
+
+        private void BtnGuardar_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Ok", "Esta es una alerta", "OK");
+        }
     }
 }
